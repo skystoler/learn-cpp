@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.12)
+make_minimum_required(VERSION 3.12)
 project(learn-cpp)
 
 set(CMAKE_VERBOSE_MAKEFILE ON)
@@ -7,10 +7,10 @@ set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-de
 #include_directories(.)
 
 #set(LIB_SRC
-#	tests/test_size.cc
+#	test/test_size.cc
 #	)
 
 #add_library(learn-cpp SHARED ${LIB_SRC})
 
-add_executable(test tests/test_size.cc)
+add_executable(test test_size.cc)
 #add_dependencies(main learn-cpp)
