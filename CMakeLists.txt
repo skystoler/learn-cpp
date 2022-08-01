@@ -1,0 +1,16 @@
+make_minimum_required(VERSION 3.12)
+project(learn-cpp)
+
+set(CMAKE_VERBOSE_MAKEFILE ON)
+set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function")
+
+include_directories(.)
+
+set(LIB_SRC
+	test/test_size.cc
+	)
+
+add_library(learn-cpp SHARED ${LIB_SRC})
+
+add_executable(main main.cc)
+add_dependencies(main learn-cpp)
