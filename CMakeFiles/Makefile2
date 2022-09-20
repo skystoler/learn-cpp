@@ -68,39 +68,113 @@ CMAKE_SOURCE_DIR = /home/jucilab/learn-cpp
 CMAKE_BINARY_DIR = /home/jucilab/learn-cpp
 
 #=============================================================================
-# Target rules for target CMakeFiles/test.dir
+# Target rules for target CMakeFiles/01_package.dir
 
 # All Build rule for target.
-CMakeFiles/test.dir/all:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/depend
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=1,2 "Built target test"
-.PHONY : CMakeFiles/test.dir/all
+CMakeFiles/01_package.dir/all:
+	$(MAKE) -f CMakeFiles/01_package.dir/build.make CMakeFiles/01_package.dir/depend
+	$(MAKE) -f CMakeFiles/01_package.dir/build.make CMakeFiles/01_package.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=1,2 "Built target 01_package"
+.PHONY : CMakeFiles/01_package.dir/all
 
 # Include target in all.
-all: CMakeFiles/test.dir/all
+all: CMakeFiles/01_package.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test.dir/rule: cmake_check_build_system
+CMakeFiles/01_package.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jucilab/learn-cpp/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/01_package.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jucilab/learn-cpp/CMakeFiles 0
-.PHONY : CMakeFiles/test.dir/rule
+.PHONY : CMakeFiles/01_package.dir/rule
 
 # Convenience name for target.
-test: CMakeFiles/test.dir/rule
+01_package: CMakeFiles/01_package.dir/rule
 
-.PHONY : test
-
-# clean rule for target.
-CMakeFiles/test.dir/clean:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/clean
-.PHONY : CMakeFiles/test.dir/clean
+.PHONY : 01_package
 
 # clean rule for target.
-clean: CMakeFiles/test.dir/clean
+CMakeFiles/01_package.dir/clean:
+	$(MAKE) -f CMakeFiles/01_package.dir/build.make CMakeFiles/01_package.dir/clean
+.PHONY : CMakeFiles/01_package.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/01_package.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_size.dir
+
+# All Build rule for target.
+CMakeFiles/test_size.dir/all:
+	$(MAKE) -f CMakeFiles/test_size.dir/build.make CMakeFiles/test_size.dir/depend
+	$(MAKE) -f CMakeFiles/test_size.dir/build.make CMakeFiles/test_size.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=5,6 "Built target test_size"
+.PHONY : CMakeFiles/test_size.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_size.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_size.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jucilab/learn-cpp/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_size.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jucilab/learn-cpp/CMakeFiles 0
+.PHONY : CMakeFiles/test_size.dir/rule
+
+# Convenience name for target.
+test_size: CMakeFiles/test_size.dir/rule
+
+.PHONY : test_size
+
+# clean rule for target.
+CMakeFiles/test_size.dir/clean:
+	$(MAKE) -f CMakeFiles/test_size.dir/build.make CMakeFiles/test_size.dir/clean
+.PHONY : CMakeFiles/test_size.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_size.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/quick_sort.dir
+
+# All Build rule for target.
+CMakeFiles/quick_sort.dir/all:
+	$(MAKE) -f CMakeFiles/quick_sort.dir/build.make CMakeFiles/quick_sort.dir/depend
+	$(MAKE) -f CMakeFiles/quick_sort.dir/build.make CMakeFiles/quick_sort.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=3,4 "Built target quick_sort"
+.PHONY : CMakeFiles/quick_sort.dir/all
+
+# Include target in all.
+all: CMakeFiles/quick_sort.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/quick_sort.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jucilab/learn-cpp/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/quick_sort.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jucilab/learn-cpp/CMakeFiles 0
+.PHONY : CMakeFiles/quick_sort.dir/rule
+
+# Convenience name for target.
+quick_sort: CMakeFiles/quick_sort.dir/rule
+
+.PHONY : quick_sort
+
+# clean rule for target.
+CMakeFiles/quick_sort.dir/clean:
+	$(MAKE) -f CMakeFiles/quick_sort.dir/build.make CMakeFiles/quick_sort.dir/clean
+.PHONY : CMakeFiles/quick_sort.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/quick_sort.dir/clean
 
 .PHONY : clean
 

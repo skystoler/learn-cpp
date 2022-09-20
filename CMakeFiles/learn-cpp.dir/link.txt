@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function  -shared -Wl,-soname,liblearn-cpp.so -o liblearn-cpp.so CMakeFiles/learn-cpp.dir/algorithm/quick_sort.cc.o 

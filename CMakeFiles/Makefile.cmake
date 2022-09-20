@@ -43,5 +43,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/test.dir/DependInfo.cmake"
+  "CMakeFiles/01_package.dir/DependInfo.cmake"
+  "CMakeFiles/test_size.dir/DependInfo.cmake"
+  "CMakeFiles/quick_sort.dir/DependInfo.cmake"
   )

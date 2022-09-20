@@ -59,17 +59,6 @@ CMAKE_BINARY_DIR = /home/jucilab/learn-cpp
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/src/cmake-3.13.4/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -80,6 +69,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/src/cmake-3.13.4/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -114,17 +114,97 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test
+# Target rules for targets named 01_package
 
 # Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test
-.PHONY : test
+01_package: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 01_package
+.PHONY : 01_package
 
 # fast build rule for target.
-test/fast:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
+01_package/fast:
+	$(MAKE) -f CMakeFiles/01_package.dir/build.make CMakeFiles/01_package.dir/build
+.PHONY : 01_package/fast
+
+#=============================================================================
+# Target rules for targets named test_size
+
+# Build rule for target.
+test_size: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_size
+.PHONY : test_size
+
+# fast build rule for target.
+test_size/fast:
+	$(MAKE) -f CMakeFiles/test_size.dir/build.make CMakeFiles/test_size.dir/build
+.PHONY : test_size/fast
+
+#=============================================================================
+# Target rules for targets named quick_sort
+
+# Build rule for target.
+quick_sort: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 quick_sort
+.PHONY : quick_sort
+
+# fast build rule for target.
+quick_sort/fast:
+	$(MAKE) -f CMakeFiles/quick_sort.dir/build.make CMakeFiles/quick_sort.dir/build
+.PHONY : quick_sort/fast
+
+algorithm/01_package.o: algorithm/01_package.cc.o
+
+.PHONY : algorithm/01_package.o
+
+# target to build an object file
+algorithm/01_package.cc.o:
+	$(MAKE) -f CMakeFiles/01_package.dir/build.make CMakeFiles/01_package.dir/algorithm/01_package.cc.o
+.PHONY : algorithm/01_package.cc.o
+
+algorithm/01_package.i: algorithm/01_package.cc.i
+
+.PHONY : algorithm/01_package.i
+
+# target to preprocess a source file
+algorithm/01_package.cc.i:
+	$(MAKE) -f CMakeFiles/01_package.dir/build.make CMakeFiles/01_package.dir/algorithm/01_package.cc.i
+.PHONY : algorithm/01_package.cc.i
+
+algorithm/01_package.s: algorithm/01_package.cc.s
+
+.PHONY : algorithm/01_package.s
+
+# target to generate assembly for a file
+algorithm/01_package.cc.s:
+	$(MAKE) -f CMakeFiles/01_package.dir/build.make CMakeFiles/01_package.dir/algorithm/01_package.cc.s
+.PHONY : algorithm/01_package.cc.s
+
+algorithm/quick_sort.o: algorithm/quick_sort.cc.o
+
+.PHONY : algorithm/quick_sort.o
+
+# target to build an object file
+algorithm/quick_sort.cc.o:
+	$(MAKE) -f CMakeFiles/quick_sort.dir/build.make CMakeFiles/quick_sort.dir/algorithm/quick_sort.cc.o
+.PHONY : algorithm/quick_sort.cc.o
+
+algorithm/quick_sort.i: algorithm/quick_sort.cc.i
+
+.PHONY : algorithm/quick_sort.i
+
+# target to preprocess a source file
+algorithm/quick_sort.cc.i:
+	$(MAKE) -f CMakeFiles/quick_sort.dir/build.make CMakeFiles/quick_sort.dir/algorithm/quick_sort.cc.i
+.PHONY : algorithm/quick_sort.cc.i
+
+algorithm/quick_sort.s: algorithm/quick_sort.cc.s
+
+.PHONY : algorithm/quick_sort.s
+
+# target to generate assembly for a file
+algorithm/quick_sort.cc.s:
+	$(MAKE) -f CMakeFiles/quick_sort.dir/build.make CMakeFiles/quick_sort.dir/algorithm/quick_sort.cc.s
+.PHONY : algorithm/quick_sort.cc.s
 
 tests/test_size.o: tests/test_size.cc.o
 
@@ -132,7 +212,7 @@ tests/test_size.o: tests/test_size.cc.o
 
 # target to build an object file
 tests/test_size.cc.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test_size.cc.o
+	$(MAKE) -f CMakeFiles/test_size.dir/build.make CMakeFiles/test_size.dir/tests/test_size.cc.o
 .PHONY : tests/test_size.cc.o
 
 tests/test_size.i: tests/test_size.cc.i
@@ -141,7 +221,7 @@ tests/test_size.i: tests/test_size.cc.i
 
 # target to preprocess a source file
 tests/test_size.cc.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test_size.cc.i
+	$(MAKE) -f CMakeFiles/test_size.dir/build.make CMakeFiles/test_size.dir/tests/test_size.cc.i
 .PHONY : tests/test_size.cc.i
 
 tests/test_size.s: tests/test_size.cc.s
@@ -150,7 +230,7 @@ tests/test_size.s: tests/test_size.cc.s
 
 # target to generate assembly for a file
 tests/test_size.cc.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test_size.cc.s
+	$(MAKE) -f CMakeFiles/test_size.dir/build.make CMakeFiles/test_size.dir/tests/test_size.cc.s
 .PHONY : tests/test_size.cc.s
 
 # Help Target
@@ -159,9 +239,17 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... test"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... 01_package"
+	@echo "... test_size"
+	@echo "... quick_sort"
+	@echo "... algorithm/01_package.o"
+	@echo "... algorithm/01_package.i"
+	@echo "... algorithm/01_package.s"
+	@echo "... algorithm/quick_sort.o"
+	@echo "... algorithm/quick_sort.i"
+	@echo "... algorithm/quick_sort.s"
 	@echo "... tests/test_size.o"
 	@echo "... tests/test_size.i"
 	@echo "... tests/test_size.s"

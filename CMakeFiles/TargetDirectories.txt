@@ -1,3 +1,5 @@
-/home/jucilab/learn-cpp/CMakeFiles/rebuild_cache.dir
-/home/jucilab/learn-cpp/CMakeFiles/test.dir
 /home/jucilab/learn-cpp/CMakeFiles/edit_cache.dir
+/home/jucilab/learn-cpp/CMakeFiles/rebuild_cache.dir
+/home/jucilab/learn-cpp/CMakeFiles/01_package.dir
+/home/jucilab/learn-cpp/CMakeFiles/test_size.dir
+/home/jucilab/learn-cpp/CMakeFiles/quick_sort.dir

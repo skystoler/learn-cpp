@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jucilab/learn-cpp/tests/test_size.cc" "/home/jucilab/learn-cpp/CMakeFiles/test.dir/tests/test_size.cc.o"
+  "/home/jucilab/learn-cpp/tests/test1.cc" "/home/jucilab/learn-cpp/CMakeFiles/test.dir/tests/test1.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

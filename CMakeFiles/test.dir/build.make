@@ -60,27 +60,27 @@ include CMakeFiles/test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test.dir/flags.make
 
-CMakeFiles/test.dir/tests/test_size.cc.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/tests/test_size.cc.o: tests/test_size.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/tests/test_size.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/tests/test_size.cc.o -c /home/jucilab/learn-cpp/tests/test_size.cc
+CMakeFiles/test.dir/tests/test1.cc.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/tests/test1.cc.o: tests/test1.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/tests/test1.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/tests/test1.cc.o -c /home/jucilab/learn-cpp/tests/test1.cc
 
-CMakeFiles/test.dir/tests/test_size.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/test_size.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jucilab/learn-cpp/tests/test_size.cc > CMakeFiles/test.dir/tests/test_size.cc.i
+CMakeFiles/test.dir/tests/test1.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/test1.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jucilab/learn-cpp/tests/test1.cc > CMakeFiles/test.dir/tests/test1.cc.i
 
-CMakeFiles/test.dir/tests/test_size.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/test_size.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jucilab/learn-cpp/tests/test_size.cc -o CMakeFiles/test.dir/tests/test_size.cc.s
+CMakeFiles/test.dir/tests/test1.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/test1.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jucilab/learn-cpp/tests/test1.cc -o CMakeFiles/test.dir/tests/test1.cc.s
 
 # Object files for target test
 test_OBJECTS = \
-"CMakeFiles/test.dir/tests/test_size.cc.o"
+"CMakeFiles/test.dir/tests/test1.cc.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
-test: CMakeFiles/test.dir/tests/test_size.cc.o
+test: CMakeFiles/test.dir/tests/test1.cc.o
 test: CMakeFiles/test.dir/build.make
 test: CMakeFiles/test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test"
