@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jucilab/learn-cpp/tests/test_absfloat.cc
+math.h
+-
+iostream
+-
+fstream
+-
+vector
+-
+iomanip
+-
+

@@ -59,17 +59,6 @@ CMAKE_BINARY_DIR = /home/jucilab/learn-cpp
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/src/cmake-3.13.4/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -80,6 +69,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/src/cmake-3.13.4/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -114,6 +114,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named reverse_list
+
+# Build rule for target.
+reverse_list: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 reverse_list
+.PHONY : reverse_list
+
+# fast build rule for target.
+reverse_list/fast:
+	$(MAKE) -f CMakeFiles/reverse_list.dir/build.make CMakeFiles/reverse_list.dir/build
+.PHONY : reverse_list/fast
+
+#=============================================================================
 # Target rules for targets named 01_package
 
 # Build rule for target.
@@ -140,6 +153,58 @@ test_size/fast:
 .PHONY : test_size/fast
 
 #=============================================================================
+# Target rules for targets named tree_array
+
+# Build rule for target.
+tree_array: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tree_array
+.PHONY : tree_array
+
+# fast build rule for target.
+tree_array/fast:
+	$(MAKE) -f CMakeFiles/tree_array.dir/build.make CMakeFiles/tree_array.dir/build
+.PHONY : tree_array/fast
+
+#=============================================================================
+# Target rules for targets named test_rand
+
+# Build rule for target.
+test_rand: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_rand
+.PHONY : test_rand
+
+# fast build rule for target.
+test_rand/fast:
+	$(MAKE) -f CMakeFiles/test_rand.dir/build.make CMakeFiles/test_rand.dir/build
+.PHONY : test_rand/fast
+
+#=============================================================================
+# Target rules for targets named test_absfloat
+
+# Build rule for target.
+test_absfloat: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_absfloat
+.PHONY : test_absfloat
+
+# fast build rule for target.
+test_absfloat/fast:
+	$(MAKE) -f CMakeFiles/test_absfloat.dir/build.make CMakeFiles/test_absfloat.dir/build
+.PHONY : test_absfloat/fast
+
+#=============================================================================
+# Target rules for targets named test_char
+
+# Build rule for target.
+test_char: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_char
+.PHONY : test_char
+
+# fast build rule for target.
+test_char/fast:
+	$(MAKE) -f CMakeFiles/test_char.dir/build.make CMakeFiles/test_char.dir/build
+.PHONY : test_char/fast
+
+#=============================================================================
 # Target rules for targets named quick_sort
 
 # Build rule for target.
@@ -151,6 +216,19 @@ quick_sort: cmake_check_build_system
 quick_sort/fast:
 	$(MAKE) -f CMakeFiles/quick_sort.dir/build.make CMakeFiles/quick_sort.dir/build
 .PHONY : quick_sort/fast
+
+#=============================================================================
+# Target rules for targets named quick_pow
+
+# Build rule for target.
+quick_pow: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 quick_pow
+.PHONY : quick_pow
+
+# fast build rule for target.
+quick_pow/fast:
+	$(MAKE) -f CMakeFiles/quick_pow.dir/build.make CMakeFiles/quick_pow.dir/build
+.PHONY : quick_pow/fast
 
 algorithm/01_package.o: algorithm/01_package.cc.o
 
@@ -179,6 +257,33 @@ algorithm/01_package.cc.s:
 	$(MAKE) -f CMakeFiles/01_package.dir/build.make CMakeFiles/01_package.dir/algorithm/01_package.cc.s
 .PHONY : algorithm/01_package.cc.s
 
+algorithm/quick_pow.o: algorithm/quick_pow.cc.o
+
+.PHONY : algorithm/quick_pow.o
+
+# target to build an object file
+algorithm/quick_pow.cc.o:
+	$(MAKE) -f CMakeFiles/quick_pow.dir/build.make CMakeFiles/quick_pow.dir/algorithm/quick_pow.cc.o
+.PHONY : algorithm/quick_pow.cc.o
+
+algorithm/quick_pow.i: algorithm/quick_pow.cc.i
+
+.PHONY : algorithm/quick_pow.i
+
+# target to preprocess a source file
+algorithm/quick_pow.cc.i:
+	$(MAKE) -f CMakeFiles/quick_pow.dir/build.make CMakeFiles/quick_pow.dir/algorithm/quick_pow.cc.i
+.PHONY : algorithm/quick_pow.cc.i
+
+algorithm/quick_pow.s: algorithm/quick_pow.cc.s
+
+.PHONY : algorithm/quick_pow.s
+
+# target to generate assembly for a file
+algorithm/quick_pow.cc.s:
+	$(MAKE) -f CMakeFiles/quick_pow.dir/build.make CMakeFiles/quick_pow.dir/algorithm/quick_pow.cc.s
+.PHONY : algorithm/quick_pow.cc.s
+
 algorithm/quick_sort.o: algorithm/quick_sort.cc.o
 
 .PHONY : algorithm/quick_sort.o
@@ -205,6 +310,141 @@ algorithm/quick_sort.s: algorithm/quick_sort.cc.s
 algorithm/quick_sort.cc.s:
 	$(MAKE) -f CMakeFiles/quick_sort.dir/build.make CMakeFiles/quick_sort.dir/algorithm/quick_sort.cc.s
 .PHONY : algorithm/quick_sort.cc.s
+
+algorithm/reverse_list.o: algorithm/reverse_list.cc.o
+
+.PHONY : algorithm/reverse_list.o
+
+# target to build an object file
+algorithm/reverse_list.cc.o:
+	$(MAKE) -f CMakeFiles/reverse_list.dir/build.make CMakeFiles/reverse_list.dir/algorithm/reverse_list.cc.o
+.PHONY : algorithm/reverse_list.cc.o
+
+algorithm/reverse_list.i: algorithm/reverse_list.cc.i
+
+.PHONY : algorithm/reverse_list.i
+
+# target to preprocess a source file
+algorithm/reverse_list.cc.i:
+	$(MAKE) -f CMakeFiles/reverse_list.dir/build.make CMakeFiles/reverse_list.dir/algorithm/reverse_list.cc.i
+.PHONY : algorithm/reverse_list.cc.i
+
+algorithm/reverse_list.s: algorithm/reverse_list.cc.s
+
+.PHONY : algorithm/reverse_list.s
+
+# target to generate assembly for a file
+algorithm/reverse_list.cc.s:
+	$(MAKE) -f CMakeFiles/reverse_list.dir/build.make CMakeFiles/reverse_list.dir/algorithm/reverse_list.cc.s
+.PHONY : algorithm/reverse_list.cc.s
+
+algorithm/tree_array.o: algorithm/tree_array.cc.o
+
+.PHONY : algorithm/tree_array.o
+
+# target to build an object file
+algorithm/tree_array.cc.o:
+	$(MAKE) -f CMakeFiles/tree_array.dir/build.make CMakeFiles/tree_array.dir/algorithm/tree_array.cc.o
+.PHONY : algorithm/tree_array.cc.o
+
+algorithm/tree_array.i: algorithm/tree_array.cc.i
+
+.PHONY : algorithm/tree_array.i
+
+# target to preprocess a source file
+algorithm/tree_array.cc.i:
+	$(MAKE) -f CMakeFiles/tree_array.dir/build.make CMakeFiles/tree_array.dir/algorithm/tree_array.cc.i
+.PHONY : algorithm/tree_array.cc.i
+
+algorithm/tree_array.s: algorithm/tree_array.cc.s
+
+.PHONY : algorithm/tree_array.s
+
+# target to generate assembly for a file
+algorithm/tree_array.cc.s:
+	$(MAKE) -f CMakeFiles/tree_array.dir/build.make CMakeFiles/tree_array.dir/algorithm/tree_array.cc.s
+.PHONY : algorithm/tree_array.cc.s
+
+tests/test_absfloat.o: tests/test_absfloat.cc.o
+
+.PHONY : tests/test_absfloat.o
+
+# target to build an object file
+tests/test_absfloat.cc.o:
+	$(MAKE) -f CMakeFiles/test_absfloat.dir/build.make CMakeFiles/test_absfloat.dir/tests/test_absfloat.cc.o
+.PHONY : tests/test_absfloat.cc.o
+
+tests/test_absfloat.i: tests/test_absfloat.cc.i
+
+.PHONY : tests/test_absfloat.i
+
+# target to preprocess a source file
+tests/test_absfloat.cc.i:
+	$(MAKE) -f CMakeFiles/test_absfloat.dir/build.make CMakeFiles/test_absfloat.dir/tests/test_absfloat.cc.i
+.PHONY : tests/test_absfloat.cc.i
+
+tests/test_absfloat.s: tests/test_absfloat.cc.s
+
+.PHONY : tests/test_absfloat.s
+
+# target to generate assembly for a file
+tests/test_absfloat.cc.s:
+	$(MAKE) -f CMakeFiles/test_absfloat.dir/build.make CMakeFiles/test_absfloat.dir/tests/test_absfloat.cc.s
+.PHONY : tests/test_absfloat.cc.s
+
+tests/test_char.o: tests/test_char.cc.o
+
+.PHONY : tests/test_char.o
+
+# target to build an object file
+tests/test_char.cc.o:
+	$(MAKE) -f CMakeFiles/test_char.dir/build.make CMakeFiles/test_char.dir/tests/test_char.cc.o
+.PHONY : tests/test_char.cc.o
+
+tests/test_char.i: tests/test_char.cc.i
+
+.PHONY : tests/test_char.i
+
+# target to preprocess a source file
+tests/test_char.cc.i:
+	$(MAKE) -f CMakeFiles/test_char.dir/build.make CMakeFiles/test_char.dir/tests/test_char.cc.i
+.PHONY : tests/test_char.cc.i
+
+tests/test_char.s: tests/test_char.cc.s
+
+.PHONY : tests/test_char.s
+
+# target to generate assembly for a file
+tests/test_char.cc.s:
+	$(MAKE) -f CMakeFiles/test_char.dir/build.make CMakeFiles/test_char.dir/tests/test_char.cc.s
+.PHONY : tests/test_char.cc.s
+
+tests/test_rand.o: tests/test_rand.cc.o
+
+.PHONY : tests/test_rand.o
+
+# target to build an object file
+tests/test_rand.cc.o:
+	$(MAKE) -f CMakeFiles/test_rand.dir/build.make CMakeFiles/test_rand.dir/tests/test_rand.cc.o
+.PHONY : tests/test_rand.cc.o
+
+tests/test_rand.i: tests/test_rand.cc.i
+
+.PHONY : tests/test_rand.i
+
+# target to preprocess a source file
+tests/test_rand.cc.i:
+	$(MAKE) -f CMakeFiles/test_rand.dir/build.make CMakeFiles/test_rand.dir/tests/test_rand.cc.i
+.PHONY : tests/test_rand.cc.i
+
+tests/test_rand.s: tests/test_rand.cc.s
+
+.PHONY : tests/test_rand.s
+
+# target to generate assembly for a file
+tests/test_rand.cc.s:
+	$(MAKE) -f CMakeFiles/test_rand.dir/build.make CMakeFiles/test_rand.dir/tests/test_rand.cc.s
+.PHONY : tests/test_rand.cc.s
 
 tests/test_size.o: tests/test_size.cc.o
 
@@ -239,17 +479,41 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... reverse_list"
 	@echo "... 01_package"
 	@echo "... test_size"
+	@echo "... tree_array"
+	@echo "... test_rand"
+	@echo "... test_absfloat"
+	@echo "... test_char"
+	@echo "... edit_cache"
 	@echo "... quick_sort"
+	@echo "... quick_pow"
 	@echo "... algorithm/01_package.o"
 	@echo "... algorithm/01_package.i"
 	@echo "... algorithm/01_package.s"
+	@echo "... algorithm/quick_pow.o"
+	@echo "... algorithm/quick_pow.i"
+	@echo "... algorithm/quick_pow.s"
 	@echo "... algorithm/quick_sort.o"
 	@echo "... algorithm/quick_sort.i"
 	@echo "... algorithm/quick_sort.s"
+	@echo "... algorithm/reverse_list.o"
+	@echo "... algorithm/reverse_list.i"
+	@echo "... algorithm/reverse_list.s"
+	@echo "... algorithm/tree_array.o"
+	@echo "... algorithm/tree_array.i"
+	@echo "... algorithm/tree_array.s"
+	@echo "... tests/test_absfloat.o"
+	@echo "... tests/test_absfloat.i"
+	@echo "... tests/test_absfloat.s"
+	@echo "... tests/test_char.o"
+	@echo "... tests/test_char.i"
+	@echo "... tests/test_char.s"
+	@echo "... tests/test_rand.o"
+	@echo "... tests/test_rand.i"
+	@echo "... tests/test_rand.s"
 	@echo "... tests/test_size.o"
 	@echo "... tests/test_size.i"
 	@echo "... tests/test_size.s"

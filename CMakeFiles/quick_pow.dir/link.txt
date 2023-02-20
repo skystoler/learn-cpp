@@ -1,0 +1,1 @@
+/usr/bin/c++   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function   CMakeFiles/quick_pow.dir/algorithm/quick_pow.cc.o  -o bin/quick_pow 
