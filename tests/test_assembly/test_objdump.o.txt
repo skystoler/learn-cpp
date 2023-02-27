@@ -1,0 +1,54 @@
+
+test_objdump.o:     file format elf64-x86-64
+
+Contents of section .text:
+ 0000 554889e5 4883ec20 48897de8 48837de8  UH..H.. H.}.H.}.
+ 0010 017f0a48 c745f801 000000eb 1f488b45  ...H.E.......H.E
+ 0020 e84883e8 014889c7 e8000000 004889c2  .H...H.......H..
+ 0030 488b45e8 480fafc2 488945f8 488b45f8  H.E.H...H.E.H.E.
+ 0040 c9c35548 89e5bf05 000000e8 00000000  ..UH............
+ 0050 b8000000 005dc3                      .....].         
+Contents of section .comment:
+ 0000 00474343 3a202855 62756e74 7520372e  .GCC: (Ubuntu 7.
+ 0010 352e302d 33756275 6e747531 7e31382e  5.0-3ubuntu1~18.
+ 0020 30342920 372e352e 3000               04) 7.5.0.      
+Contents of section .eh_frame:
+ 0000 14000000 00000000 017a5200 01781001  .........zR..x..
+ 0010 1b0c0708 90010000 1c000000 1c000000  ................
+ 0020 00000000 42000000 00410e10 8602430d  ....B....A....C.
+ 0030 067d0c07 08000000 1c000000 3c000000  .}..........<...
+ 0040 00000000 15000000 00410e10 8602430d  .........A....C.
+ 0050 06500c07 08000000                    .P......        
+
+Disassembly of section .text:
+
+0000000000000000 <rfact>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	48 83 ec 20          	sub    $0x20,%rsp
+   8:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+   c:	48 83 7d e8 01       	cmpq   $0x1,-0x18(%rbp)
+  11:	7f 0a                	jg     1d <rfact+0x1d>
+  13:	48 c7 45 f8 01 00 00 	movq   $0x1,-0x8(%rbp)
+  1a:	00 
+  1b:	eb 1f                	jmp    3c <rfact+0x3c>
+  1d:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  21:	48 83 e8 01          	sub    $0x1,%rax
+  25:	48 89 c7             	mov    %rax,%rdi
+  28:	e8 00 00 00 00       	callq  2d <rfact+0x2d>
+  2d:	48 89 c2             	mov    %rax,%rdx
+  30:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  34:	48 0f af c2          	imul   %rdx,%rax
+  38:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+  3c:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  40:	c9                   	leaveq 
+  41:	c3                   	retq   
+
+0000000000000042 <main>:
+  42:	55                   	push   %rbp
+  43:	48 89 e5             	mov    %rsp,%rbp
+  46:	bf 05 00 00 00       	mov    $0x5,%edi
+  4b:	e8 00 00 00 00       	callq  50 <main+0xe>
+  50:	b8 00 00 00 00       	mov    $0x0,%eax
+  55:	5d                   	pop    %rbp
+  56:	c3                   	retq   

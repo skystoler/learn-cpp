@@ -140,6 +140,32 @@ reverse_list/fast:
 .PHONY : 01_package/fast
 
 #=============================================================================
+# Target rules for targets named quick_pow
+
+# Build rule for target.
+quick_pow: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 quick_pow
+.PHONY : quick_pow
+
+# fast build rule for target.
+quick_pow/fast:
+	$(MAKE) -f CMakeFiles/quick_pow.dir/build.make CMakeFiles/quick_pow.dir/build
+.PHONY : quick_pow/fast
+
+#=============================================================================
+# Target rules for targets named quick_sort
+
+# Build rule for target.
+quick_sort: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 quick_sort
+.PHONY : quick_sort
+
+# fast build rule for target.
+quick_sort/fast:
+	$(MAKE) -f CMakeFiles/quick_sort.dir/build.make CMakeFiles/quick_sort.dir/build
+.PHONY : quick_sort/fast
+
+#=============================================================================
 # Target rules for targets named test_size
 
 # Build rule for target.
@@ -151,6 +177,19 @@ test_size: cmake_check_build_system
 test_size/fast:
 	$(MAKE) -f CMakeFiles/test_size.dir/build.make CMakeFiles/test_size.dir/build
 .PHONY : test_size/fast
+
+#=============================================================================
+# Target rules for targets named test_ran
+
+# Build rule for target.
+test_ran: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_ran
+.PHONY : test_ran
+
+# fast build rule for target.
+test_ran/fast:
+	$(MAKE) -f CMakeFiles/test_ran.dir/build.make CMakeFiles/test_ran.dir/build
+.PHONY : test_ran/fast
 
 #=============================================================================
 # Target rules for targets named tree_array
@@ -203,32 +242,6 @@ test_char: cmake_check_build_system
 test_char/fast:
 	$(MAKE) -f CMakeFiles/test_char.dir/build.make CMakeFiles/test_char.dir/build
 .PHONY : test_char/fast
-
-#=============================================================================
-# Target rules for targets named quick_sort
-
-# Build rule for target.
-quick_sort: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 quick_sort
-.PHONY : quick_sort
-
-# fast build rule for target.
-quick_sort/fast:
-	$(MAKE) -f CMakeFiles/quick_sort.dir/build.make CMakeFiles/quick_sort.dir/build
-.PHONY : quick_sort/fast
-
-#=============================================================================
-# Target rules for targets named quick_pow
-
-# Build rule for target.
-quick_pow: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 quick_pow
-.PHONY : quick_pow
-
-# fast build rule for target.
-quick_pow/fast:
-	$(MAKE) -f CMakeFiles/quick_pow.dir/build.make CMakeFiles/quick_pow.dir/build
-.PHONY : quick_pow/fast
 
 algorithm/01_package.o: algorithm/01_package.cc.o
 
@@ -318,6 +331,7 @@ algorithm/reverse_list.o: algorithm/reverse_list.cc.o
 # target to build an object file
 algorithm/reverse_list.cc.o:
 	$(MAKE) -f CMakeFiles/reverse_list.dir/build.make CMakeFiles/reverse_list.dir/algorithm/reverse_list.cc.o
+	$(MAKE) -f CMakeFiles/test_ran.dir/build.make CMakeFiles/test_ran.dir/algorithm/reverse_list.cc.o
 .PHONY : algorithm/reverse_list.cc.o
 
 algorithm/reverse_list.i: algorithm/reverse_list.cc.i
@@ -327,6 +341,7 @@ algorithm/reverse_list.i: algorithm/reverse_list.cc.i
 # target to preprocess a source file
 algorithm/reverse_list.cc.i:
 	$(MAKE) -f CMakeFiles/reverse_list.dir/build.make CMakeFiles/reverse_list.dir/algorithm/reverse_list.cc.i
+	$(MAKE) -f CMakeFiles/test_ran.dir/build.make CMakeFiles/test_ran.dir/algorithm/reverse_list.cc.i
 .PHONY : algorithm/reverse_list.cc.i
 
 algorithm/reverse_list.s: algorithm/reverse_list.cc.s
@@ -336,6 +351,7 @@ algorithm/reverse_list.s: algorithm/reverse_list.cc.s
 # target to generate assembly for a file
 algorithm/reverse_list.cc.s:
 	$(MAKE) -f CMakeFiles/reverse_list.dir/build.make CMakeFiles/reverse_list.dir/algorithm/reverse_list.cc.s
+	$(MAKE) -f CMakeFiles/test_ran.dir/build.make CMakeFiles/test_ran.dir/algorithm/reverse_list.cc.s
 .PHONY : algorithm/reverse_list.cc.s
 
 algorithm/tree_array.o: algorithm/tree_array.cc.o
@@ -482,14 +498,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... reverse_list"
 	@echo "... 01_package"
+	@echo "... edit_cache"
+	@echo "... quick_pow"
+	@echo "... quick_sort"
 	@echo "... test_size"
+	@echo "... test_ran"
 	@echo "... tree_array"
 	@echo "... test_rand"
 	@echo "... test_absfloat"
 	@echo "... test_char"
-	@echo "... edit_cache"
-	@echo "... quick_sort"
-	@echo "... quick_pow"
 	@echo "... algorithm/01_package.o"
 	@echo "... algorithm/01_package.i"
 	@echo "... algorithm/01_package.s"
