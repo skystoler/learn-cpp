@@ -1,0 +1,1 @@
+/usr/bin/c++   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Wno-unused-function   CMakeFiles/test_fork.dir/tests/test_fork.cc.o  -o bin/test_fork 

@@ -1,0 +1,1 @@
+/usr/bin/c++   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Wno-unused-function   CMakeFiles/exam_iterator.dir/exam/exam_iterator.cc.o  -o bin/exam_iterator 

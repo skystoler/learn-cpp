@@ -114,108 +114,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named reverse_list
+# Target rules for targets named auto_machine
 
 # Build rule for target.
-reverse_list: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 reverse_list
-.PHONY : reverse_list
+auto_machine: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 auto_machine
+.PHONY : auto_machine
 
 # fast build rule for target.
-reverse_list/fast:
-	$(MAKE) -f CMakeFiles/reverse_list.dir/build.make CMakeFiles/reverse_list.dir/build
-.PHONY : reverse_list/fast
+auto_machine/fast:
+	$(MAKE) -f CMakeFiles/auto_machine.dir/build.make CMakeFiles/auto_machine.dir/build
+.PHONY : auto_machine/fast
 
 #=============================================================================
-# Target rules for targets named 01_package
+# Target rules for targets named test_char
 
 # Build rule for target.
-01_package: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 01_package
-.PHONY : 01_package
+test_char: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_char
+.PHONY : test_char
 
 # fast build rule for target.
-01_package/fast:
-	$(MAKE) -f CMakeFiles/01_package.dir/build.make CMakeFiles/01_package.dir/build
-.PHONY : 01_package/fast
+test_char/fast:
+	$(MAKE) -f CMakeFiles/test_char.dir/build.make CMakeFiles/test_char.dir/build
+.PHONY : test_char/fast
 
 #=============================================================================
-# Target rules for targets named quick_pow
+# Target rules for targets named exam_iterator
 
 # Build rule for target.
-quick_pow: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 quick_pow
-.PHONY : quick_pow
+exam_iterator: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exam_iterator
+.PHONY : exam_iterator
 
 # fast build rule for target.
-quick_pow/fast:
-	$(MAKE) -f CMakeFiles/quick_pow.dir/build.make CMakeFiles/quick_pow.dir/build
-.PHONY : quick_pow/fast
-
-#=============================================================================
-# Target rules for targets named quick_sort
-
-# Build rule for target.
-quick_sort: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 quick_sort
-.PHONY : quick_sort
-
-# fast build rule for target.
-quick_sort/fast:
-	$(MAKE) -f CMakeFiles/quick_sort.dir/build.make CMakeFiles/quick_sort.dir/build
-.PHONY : quick_sort/fast
-
-#=============================================================================
-# Target rules for targets named test_size
-
-# Build rule for target.
-test_size: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_size
-.PHONY : test_size
-
-# fast build rule for target.
-test_size/fast:
-	$(MAKE) -f CMakeFiles/test_size.dir/build.make CMakeFiles/test_size.dir/build
-.PHONY : test_size/fast
-
-#=============================================================================
-# Target rules for targets named test_ran
-
-# Build rule for target.
-test_ran: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_ran
-.PHONY : test_ran
-
-# fast build rule for target.
-test_ran/fast:
-	$(MAKE) -f CMakeFiles/test_ran.dir/build.make CMakeFiles/test_ran.dir/build
-.PHONY : test_ran/fast
-
-#=============================================================================
-# Target rules for targets named tree_array
-
-# Build rule for target.
-tree_array: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tree_array
-.PHONY : tree_array
-
-# fast build rule for target.
-tree_array/fast:
-	$(MAKE) -f CMakeFiles/tree_array.dir/build.make CMakeFiles/tree_array.dir/build
-.PHONY : tree_array/fast
-
-#=============================================================================
-# Target rules for targets named test_rand
-
-# Build rule for target.
-test_rand: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_rand
-.PHONY : test_rand
-
-# fast build rule for target.
-test_rand/fast:
-	$(MAKE) -f CMakeFiles/test_rand.dir/build.make CMakeFiles/test_rand.dir/build
-.PHONY : test_rand/fast
+exam_iterator/fast:
+	$(MAKE) -f CMakeFiles/exam_iterator.dir/build.make CMakeFiles/exam_iterator.dir/build
+.PHONY : exam_iterator/fast
 
 #=============================================================================
 # Target rules for targets named test_absfloat
@@ -231,17 +166,199 @@ test_absfloat/fast:
 .PHONY : test_absfloat/fast
 
 #=============================================================================
-# Target rules for targets named test_char
+# Target rules for targets named tree_array
 
 # Build rule for target.
-test_char: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_char
-.PHONY : test_char
+tree_array: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tree_array
+.PHONY : tree_array
 
 # fast build rule for target.
-test_char/fast:
-	$(MAKE) -f CMakeFiles/test_char.dir/build.make CMakeFiles/test_char.dir/build
-.PHONY : test_char/fast
+tree_array/fast:
+	$(MAKE) -f CMakeFiles/tree_array.dir/build.make CMakeFiles/tree_array.dir/build
+.PHONY : tree_array/fast
+
+#=============================================================================
+# Target rules for targets named test_ran
+
+# Build rule for target.
+test_ran: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_ran
+.PHONY : test_ran
+
+# fast build rule for target.
+test_ran/fast:
+	$(MAKE) -f CMakeFiles/test_ran.dir/build.make CMakeFiles/test_ran.dir/build
+.PHONY : test_ran/fast
+
+#=============================================================================
+# Target rules for targets named test_size
+
+# Build rule for target.
+test_size: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_size
+.PHONY : test_size
+
+# fast build rule for target.
+test_size/fast:
+	$(MAKE) -f CMakeFiles/test_size.dir/build.make CMakeFiles/test_size.dir/build
+.PHONY : test_size/fast
+
+#=============================================================================
+# Target rules for targets named test_fork
+
+# Build rule for target.
+test_fork: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_fork
+.PHONY : test_fork
+
+# fast build rule for target.
+test_fork/fast:
+	$(MAKE) -f CMakeFiles/test_fork.dir/build.make CMakeFiles/test_fork.dir/build
+.PHONY : test_fork/fast
+
+#=============================================================================
+# Target rules for targets named 01_package
+
+# Build rule for target.
+01_package: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 01_package
+.PHONY : 01_package
+
+# fast build rule for target.
+01_package/fast:
+	$(MAKE) -f CMakeFiles/01_package.dir/build.make CMakeFiles/01_package.dir/build
+.PHONY : 01_package/fast
+
+#=============================================================================
+# Target rules for targets named reverse_list
+
+# Build rule for target.
+reverse_list: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 reverse_list
+.PHONY : reverse_list
+
+# fast build rule for target.
+reverse_list/fast:
+	$(MAKE) -f CMakeFiles/reverse_list.dir/build.make CMakeFiles/reverse_list.dir/build
+.PHONY : reverse_list/fast
+
+#=============================================================================
+# Target rules for targets named exam_multiarray
+
+# Build rule for target.
+exam_multiarray: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exam_multiarray
+.PHONY : exam_multiarray
+
+# fast build rule for target.
+exam_multiarray/fast:
+	$(MAKE) -f CMakeFiles/exam_multiarray.dir/build.make CMakeFiles/exam_multiarray.dir/build
+.PHONY : exam_multiarray/fast
+
+#=============================================================================
+# Target rules for targets named test_LRU
+
+# Build rule for target.
+test_LRU: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_LRU
+.PHONY : test_LRU
+
+# fast build rule for target.
+test_LRU/fast:
+	$(MAKE) -f CMakeFiles/test_LRU.dir/build.make CMakeFiles/test_LRU.dir/build
+.PHONY : test_LRU/fast
+
+#=============================================================================
+# Target rules for targets named test_rand
+
+# Build rule for target.
+test_rand: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_rand
+.PHONY : test_rand
+
+# fast build rule for target.
+test_rand/fast:
+	$(MAKE) -f CMakeFiles/test_rand.dir/build.make CMakeFiles/test_rand.dir/build
+.PHONY : test_rand/fast
+
+#=============================================================================
+# Target rules for targets named quick_pow
+
+# Build rule for target.
+quick_pow: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 quick_pow
+.PHONY : quick_pow
+
+# fast build rule for target.
+quick_pow/fast:
+	$(MAKE) -f CMakeFiles/quick_pow.dir/build.make CMakeFiles/quick_pow.dir/build
+.PHONY : quick_pow/fast
+
+#=============================================================================
+# Target rules for targets named exam_output2
+
+# Build rule for target.
+exam_output2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exam_output2
+.PHONY : exam_output2
+
+# fast build rule for target.
+exam_output2/fast:
+	$(MAKE) -f CMakeFiles/exam_output2.dir/build.make CMakeFiles/exam_output2.dir/build
+.PHONY : exam_output2/fast
+
+#=============================================================================
+# Target rules for targets named exam_damage
+
+# Build rule for target.
+exam_damage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exam_damage
+.PHONY : exam_damage
+
+# fast build rule for target.
+exam_damage/fast:
+	$(MAKE) -f CMakeFiles/exam_damage.dir/build.make CMakeFiles/exam_damage.dir/build
+.PHONY : exam_damage/fast
+
+#=============================================================================
+# Target rules for targets named test_erase
+
+# Build rule for target.
+test_erase: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_erase
+.PHONY : test_erase
+
+# fast build rule for target.
+test_erase/fast:
+	$(MAKE) -f CMakeFiles/test_erase.dir/build.make CMakeFiles/test_erase.dir/build
+.PHONY : test_erase/fast
+
+#=============================================================================
+# Target rules for targets named quick_sort
+
+# Build rule for target.
+quick_sort: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 quick_sort
+.PHONY : quick_sort
+
+# fast build rule for target.
+quick_sort/fast:
+	$(MAKE) -f CMakeFiles/quick_sort.dir/build.make CMakeFiles/quick_sort.dir/build
+.PHONY : quick_sort/fast
+
+#=============================================================================
+# Target rules for targets named exam_output1
+
+# Build rule for target.
+exam_output1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exam_output1
+.PHONY : exam_output1
+
+# fast build rule for target.
+exam_output1/fast:
+	$(MAKE) -f CMakeFiles/exam_output1.dir/build.make CMakeFiles/exam_output1.dir/build
+.PHONY : exam_output1/fast
 
 algorithm/01_package.o: algorithm/01_package.cc.o
 
@@ -330,8 +447,8 @@ algorithm/reverse_list.o: algorithm/reverse_list.cc.o
 
 # target to build an object file
 algorithm/reverse_list.cc.o:
-	$(MAKE) -f CMakeFiles/reverse_list.dir/build.make CMakeFiles/reverse_list.dir/algorithm/reverse_list.cc.o
 	$(MAKE) -f CMakeFiles/test_ran.dir/build.make CMakeFiles/test_ran.dir/algorithm/reverse_list.cc.o
+	$(MAKE) -f CMakeFiles/reverse_list.dir/build.make CMakeFiles/reverse_list.dir/algorithm/reverse_list.cc.o
 .PHONY : algorithm/reverse_list.cc.o
 
 algorithm/reverse_list.i: algorithm/reverse_list.cc.i
@@ -340,8 +457,8 @@ algorithm/reverse_list.i: algorithm/reverse_list.cc.i
 
 # target to preprocess a source file
 algorithm/reverse_list.cc.i:
-	$(MAKE) -f CMakeFiles/reverse_list.dir/build.make CMakeFiles/reverse_list.dir/algorithm/reverse_list.cc.i
 	$(MAKE) -f CMakeFiles/test_ran.dir/build.make CMakeFiles/test_ran.dir/algorithm/reverse_list.cc.i
+	$(MAKE) -f CMakeFiles/reverse_list.dir/build.make CMakeFiles/reverse_list.dir/algorithm/reverse_list.cc.i
 .PHONY : algorithm/reverse_list.cc.i
 
 algorithm/reverse_list.s: algorithm/reverse_list.cc.s
@@ -350,8 +467,8 @@ algorithm/reverse_list.s: algorithm/reverse_list.cc.s
 
 # target to generate assembly for a file
 algorithm/reverse_list.cc.s:
-	$(MAKE) -f CMakeFiles/reverse_list.dir/build.make CMakeFiles/reverse_list.dir/algorithm/reverse_list.cc.s
 	$(MAKE) -f CMakeFiles/test_ran.dir/build.make CMakeFiles/test_ran.dir/algorithm/reverse_list.cc.s
+	$(MAKE) -f CMakeFiles/reverse_list.dir/build.make CMakeFiles/reverse_list.dir/algorithm/reverse_list.cc.s
 .PHONY : algorithm/reverse_list.cc.s
 
 algorithm/tree_array.o: algorithm/tree_array.cc.o
@@ -380,6 +497,195 @@ algorithm/tree_array.s: algorithm/tree_array.cc.s
 algorithm/tree_array.cc.s:
 	$(MAKE) -f CMakeFiles/tree_array.dir/build.make CMakeFiles/tree_array.dir/algorithm/tree_array.cc.s
 .PHONY : algorithm/tree_array.cc.s
+
+exam/exam_damage.o: exam/exam_damage.cc.o
+
+.PHONY : exam/exam_damage.o
+
+# target to build an object file
+exam/exam_damage.cc.o:
+	$(MAKE) -f CMakeFiles/exam_damage.dir/build.make CMakeFiles/exam_damage.dir/exam/exam_damage.cc.o
+.PHONY : exam/exam_damage.cc.o
+
+exam/exam_damage.i: exam/exam_damage.cc.i
+
+.PHONY : exam/exam_damage.i
+
+# target to preprocess a source file
+exam/exam_damage.cc.i:
+	$(MAKE) -f CMakeFiles/exam_damage.dir/build.make CMakeFiles/exam_damage.dir/exam/exam_damage.cc.i
+.PHONY : exam/exam_damage.cc.i
+
+exam/exam_damage.s: exam/exam_damage.cc.s
+
+.PHONY : exam/exam_damage.s
+
+# target to generate assembly for a file
+exam/exam_damage.cc.s:
+	$(MAKE) -f CMakeFiles/exam_damage.dir/build.make CMakeFiles/exam_damage.dir/exam/exam_damage.cc.s
+.PHONY : exam/exam_damage.cc.s
+
+exam/exam_iterator.o: exam/exam_iterator.cc.o
+
+.PHONY : exam/exam_iterator.o
+
+# target to build an object file
+exam/exam_iterator.cc.o:
+	$(MAKE) -f CMakeFiles/exam_iterator.dir/build.make CMakeFiles/exam_iterator.dir/exam/exam_iterator.cc.o
+.PHONY : exam/exam_iterator.cc.o
+
+exam/exam_iterator.i: exam/exam_iterator.cc.i
+
+.PHONY : exam/exam_iterator.i
+
+# target to preprocess a source file
+exam/exam_iterator.cc.i:
+	$(MAKE) -f CMakeFiles/exam_iterator.dir/build.make CMakeFiles/exam_iterator.dir/exam/exam_iterator.cc.i
+.PHONY : exam/exam_iterator.cc.i
+
+exam/exam_iterator.s: exam/exam_iterator.cc.s
+
+.PHONY : exam/exam_iterator.s
+
+# target to generate assembly for a file
+exam/exam_iterator.cc.s:
+	$(MAKE) -f CMakeFiles/exam_iterator.dir/build.make CMakeFiles/exam_iterator.dir/exam/exam_iterator.cc.s
+.PHONY : exam/exam_iterator.cc.s
+
+exam/exam_multiarray.o: exam/exam_multiarray.cc.o
+
+.PHONY : exam/exam_multiarray.o
+
+# target to build an object file
+exam/exam_multiarray.cc.o:
+	$(MAKE) -f CMakeFiles/exam_multiarray.dir/build.make CMakeFiles/exam_multiarray.dir/exam/exam_multiarray.cc.o
+.PHONY : exam/exam_multiarray.cc.o
+
+exam/exam_multiarray.i: exam/exam_multiarray.cc.i
+
+.PHONY : exam/exam_multiarray.i
+
+# target to preprocess a source file
+exam/exam_multiarray.cc.i:
+	$(MAKE) -f CMakeFiles/exam_multiarray.dir/build.make CMakeFiles/exam_multiarray.dir/exam/exam_multiarray.cc.i
+.PHONY : exam/exam_multiarray.cc.i
+
+exam/exam_multiarray.s: exam/exam_multiarray.cc.s
+
+.PHONY : exam/exam_multiarray.s
+
+# target to generate assembly for a file
+exam/exam_multiarray.cc.s:
+	$(MAKE) -f CMakeFiles/exam_multiarray.dir/build.make CMakeFiles/exam_multiarray.dir/exam/exam_multiarray.cc.s
+.PHONY : exam/exam_multiarray.cc.s
+
+exam/exam_output1.o: exam/exam_output1.cc.o
+
+.PHONY : exam/exam_output1.o
+
+# target to build an object file
+exam/exam_output1.cc.o:
+	$(MAKE) -f CMakeFiles/exam_output1.dir/build.make CMakeFiles/exam_output1.dir/exam/exam_output1.cc.o
+.PHONY : exam/exam_output1.cc.o
+
+exam/exam_output1.i: exam/exam_output1.cc.i
+
+.PHONY : exam/exam_output1.i
+
+# target to preprocess a source file
+exam/exam_output1.cc.i:
+	$(MAKE) -f CMakeFiles/exam_output1.dir/build.make CMakeFiles/exam_output1.dir/exam/exam_output1.cc.i
+.PHONY : exam/exam_output1.cc.i
+
+exam/exam_output1.s: exam/exam_output1.cc.s
+
+.PHONY : exam/exam_output1.s
+
+# target to generate assembly for a file
+exam/exam_output1.cc.s:
+	$(MAKE) -f CMakeFiles/exam_output1.dir/build.make CMakeFiles/exam_output1.dir/exam/exam_output1.cc.s
+.PHONY : exam/exam_output1.cc.s
+
+exam/exam_output2.o: exam/exam_output2.cc.o
+
+.PHONY : exam/exam_output2.o
+
+# target to build an object file
+exam/exam_output2.cc.o:
+	$(MAKE) -f CMakeFiles/exam_output2.dir/build.make CMakeFiles/exam_output2.dir/exam/exam_output2.cc.o
+.PHONY : exam/exam_output2.cc.o
+
+exam/exam_output2.i: exam/exam_output2.cc.i
+
+.PHONY : exam/exam_output2.i
+
+# target to preprocess a source file
+exam/exam_output2.cc.i:
+	$(MAKE) -f CMakeFiles/exam_output2.dir/build.make CMakeFiles/exam_output2.dir/exam/exam_output2.cc.i
+.PHONY : exam/exam_output2.cc.i
+
+exam/exam_output2.s: exam/exam_output2.cc.s
+
+.PHONY : exam/exam_output2.s
+
+# target to generate assembly for a file
+exam/exam_output2.cc.s:
+	$(MAKE) -f CMakeFiles/exam_output2.dir/build.make CMakeFiles/exam_output2.dir/exam/exam_output2.cc.s
+.PHONY : exam/exam_output2.cc.s
+
+project/auto_machine.o: project/auto_machine.cc.o
+
+.PHONY : project/auto_machine.o
+
+# target to build an object file
+project/auto_machine.cc.o:
+	$(MAKE) -f CMakeFiles/auto_machine.dir/build.make CMakeFiles/auto_machine.dir/project/auto_machine.cc.o
+.PHONY : project/auto_machine.cc.o
+
+project/auto_machine.i: project/auto_machine.cc.i
+
+.PHONY : project/auto_machine.i
+
+# target to preprocess a source file
+project/auto_machine.cc.i:
+	$(MAKE) -f CMakeFiles/auto_machine.dir/build.make CMakeFiles/auto_machine.dir/project/auto_machine.cc.i
+.PHONY : project/auto_machine.cc.i
+
+project/auto_machine.s: project/auto_machine.cc.s
+
+.PHONY : project/auto_machine.s
+
+# target to generate assembly for a file
+project/auto_machine.cc.s:
+	$(MAKE) -f CMakeFiles/auto_machine.dir/build.make CMakeFiles/auto_machine.dir/project/auto_machine.cc.s
+.PHONY : project/auto_machine.cc.s
+
+tests/test_LRU.o: tests/test_LRU.cc.o
+
+.PHONY : tests/test_LRU.o
+
+# target to build an object file
+tests/test_LRU.cc.o:
+	$(MAKE) -f CMakeFiles/test_LRU.dir/build.make CMakeFiles/test_LRU.dir/tests/test_LRU.cc.o
+.PHONY : tests/test_LRU.cc.o
+
+tests/test_LRU.i: tests/test_LRU.cc.i
+
+.PHONY : tests/test_LRU.i
+
+# target to preprocess a source file
+tests/test_LRU.cc.i:
+	$(MAKE) -f CMakeFiles/test_LRU.dir/build.make CMakeFiles/test_LRU.dir/tests/test_LRU.cc.i
+.PHONY : tests/test_LRU.cc.i
+
+tests/test_LRU.s: tests/test_LRU.cc.s
+
+.PHONY : tests/test_LRU.s
+
+# target to generate assembly for a file
+tests/test_LRU.cc.s:
+	$(MAKE) -f CMakeFiles/test_LRU.dir/build.make CMakeFiles/test_LRU.dir/tests/test_LRU.cc.s
+.PHONY : tests/test_LRU.cc.s
 
 tests/test_absfloat.o: tests/test_absfloat.cc.o
 
@@ -434,6 +740,60 @@ tests/test_char.s: tests/test_char.cc.s
 tests/test_char.cc.s:
 	$(MAKE) -f CMakeFiles/test_char.dir/build.make CMakeFiles/test_char.dir/tests/test_char.cc.s
 .PHONY : tests/test_char.cc.s
+
+tests/test_erase.o: tests/test_erase.cc.o
+
+.PHONY : tests/test_erase.o
+
+# target to build an object file
+tests/test_erase.cc.o:
+	$(MAKE) -f CMakeFiles/test_erase.dir/build.make CMakeFiles/test_erase.dir/tests/test_erase.cc.o
+.PHONY : tests/test_erase.cc.o
+
+tests/test_erase.i: tests/test_erase.cc.i
+
+.PHONY : tests/test_erase.i
+
+# target to preprocess a source file
+tests/test_erase.cc.i:
+	$(MAKE) -f CMakeFiles/test_erase.dir/build.make CMakeFiles/test_erase.dir/tests/test_erase.cc.i
+.PHONY : tests/test_erase.cc.i
+
+tests/test_erase.s: tests/test_erase.cc.s
+
+.PHONY : tests/test_erase.s
+
+# target to generate assembly for a file
+tests/test_erase.cc.s:
+	$(MAKE) -f CMakeFiles/test_erase.dir/build.make CMakeFiles/test_erase.dir/tests/test_erase.cc.s
+.PHONY : tests/test_erase.cc.s
+
+tests/test_fork.o: tests/test_fork.cc.o
+
+.PHONY : tests/test_fork.o
+
+# target to build an object file
+tests/test_fork.cc.o:
+	$(MAKE) -f CMakeFiles/test_fork.dir/build.make CMakeFiles/test_fork.dir/tests/test_fork.cc.o
+.PHONY : tests/test_fork.cc.o
+
+tests/test_fork.i: tests/test_fork.cc.i
+
+.PHONY : tests/test_fork.i
+
+# target to preprocess a source file
+tests/test_fork.cc.i:
+	$(MAKE) -f CMakeFiles/test_fork.dir/build.make CMakeFiles/test_fork.dir/tests/test_fork.cc.i
+.PHONY : tests/test_fork.cc.i
+
+tests/test_fork.s: tests/test_fork.cc.s
+
+.PHONY : tests/test_fork.s
+
+# target to generate assembly for a file
+tests/test_fork.cc.s:
+	$(MAKE) -f CMakeFiles/test_fork.dir/build.make CMakeFiles/test_fork.dir/tests/test_fork.cc.s
+.PHONY : tests/test_fork.cc.s
 
 tests/test_rand.o: tests/test_rand.cc.o
 
@@ -496,17 +856,26 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... reverse_list"
-	@echo "... 01_package"
 	@echo "... edit_cache"
-	@echo "... quick_pow"
-	@echo "... quick_sort"
-	@echo "... test_size"
-	@echo "... test_ran"
-	@echo "... tree_array"
-	@echo "... test_rand"
-	@echo "... test_absfloat"
+	@echo "... auto_machine"
 	@echo "... test_char"
+	@echo "... exam_iterator"
+	@echo "... test_absfloat"
+	@echo "... tree_array"
+	@echo "... test_ran"
+	@echo "... test_size"
+	@echo "... test_fork"
+	@echo "... 01_package"
+	@echo "... reverse_list"
+	@echo "... exam_multiarray"
+	@echo "... test_LRU"
+	@echo "... test_rand"
+	@echo "... quick_pow"
+	@echo "... exam_output2"
+	@echo "... exam_damage"
+	@echo "... test_erase"
+	@echo "... quick_sort"
+	@echo "... exam_output1"
 	@echo "... algorithm/01_package.o"
 	@echo "... algorithm/01_package.i"
 	@echo "... algorithm/01_package.s"
@@ -522,12 +891,39 @@ help:
 	@echo "... algorithm/tree_array.o"
 	@echo "... algorithm/tree_array.i"
 	@echo "... algorithm/tree_array.s"
+	@echo "... exam/exam_damage.o"
+	@echo "... exam/exam_damage.i"
+	@echo "... exam/exam_damage.s"
+	@echo "... exam/exam_iterator.o"
+	@echo "... exam/exam_iterator.i"
+	@echo "... exam/exam_iterator.s"
+	@echo "... exam/exam_multiarray.o"
+	@echo "... exam/exam_multiarray.i"
+	@echo "... exam/exam_multiarray.s"
+	@echo "... exam/exam_output1.o"
+	@echo "... exam/exam_output1.i"
+	@echo "... exam/exam_output1.s"
+	@echo "... exam/exam_output2.o"
+	@echo "... exam/exam_output2.i"
+	@echo "... exam/exam_output2.s"
+	@echo "... project/auto_machine.o"
+	@echo "... project/auto_machine.i"
+	@echo "... project/auto_machine.s"
+	@echo "... tests/test_LRU.o"
+	@echo "... tests/test_LRU.i"
+	@echo "... tests/test_LRU.s"
 	@echo "... tests/test_absfloat.o"
 	@echo "... tests/test_absfloat.i"
 	@echo "... tests/test_absfloat.s"
 	@echo "... tests/test_char.o"
 	@echo "... tests/test_char.i"
 	@echo "... tests/test_char.s"
+	@echo "... tests/test_erase.o"
+	@echo "... tests/test_erase.i"
+	@echo "... tests/test_erase.s"
+	@echo "... tests/test_fork.o"
+	@echo "... tests/test_fork.i"
+	@echo "... tests/test_fork.s"
 	@echo "... tests/test_rand.o"
 	@echo "... tests/test_rand.i"
 	@echo "... tests/test_rand.s"

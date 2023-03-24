@@ -1,1 +1,1 @@
-/usr/bin/c++   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function   CMakeFiles/tree_array.dir/algorithm/tree_array.cc.o  -o bin/tree_array 
+/usr/bin/c++   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Wno-unused-function   CMakeFiles/tree_array.dir/algorithm/tree_array.cc.o  -o bin/tree_array 
