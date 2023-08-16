@@ -105,13 +105,50 @@ clean: CMakeFiles/auto_machine.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/exam_al1.dir
+
+# All Build rule for target.
+CMakeFiles/exam_al1.dir/all:
+	$(MAKE) -f CMakeFiles/exam_al1.dir/build.make CMakeFiles/exam_al1.dir/depend
+	$(MAKE) -f CMakeFiles/exam_al1.dir/build.make CMakeFiles/exam_al1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=5,6 "Built target exam_al1"
+.PHONY : CMakeFiles/exam_al1.dir/all
+
+# Include target in all.
+all: CMakeFiles/exam_al1.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/exam_al1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jucilab/learn-cpp/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exam_al1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jucilab/learn-cpp/CMakeFiles 0
+.PHONY : CMakeFiles/exam_al1.dir/rule
+
+# Convenience name for target.
+exam_al1: CMakeFiles/exam_al1.dir/rule
+
+.PHONY : exam_al1
+
+# clean rule for target.
+CMakeFiles/exam_al1.dir/clean:
+	$(MAKE) -f CMakeFiles/exam_al1.dir/build.make CMakeFiles/exam_al1.dir/clean
+.PHONY : CMakeFiles/exam_al1.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/exam_al1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/test_char.dir
 
 # All Build rule for target.
 CMakeFiles/test_char.dir/all:
 	$(MAKE) -f CMakeFiles/test_char.dir/build.make CMakeFiles/test_char.dir/depend
 	$(MAKE) -f CMakeFiles/test_char.dir/build.make CMakeFiles/test_char.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=25,26 "Built target test_char"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=27,28 "Built target test_char"
 .PHONY : CMakeFiles/test_char.dir/all
 
 # Include target in all.
@@ -148,7 +185,7 @@ clean: CMakeFiles/test_char.dir/clean
 CMakeFiles/exam_iterator.dir/all:
 	$(MAKE) -f CMakeFiles/exam_iterator.dir/build.make CMakeFiles/exam_iterator.dir/depend
 	$(MAKE) -f CMakeFiles/exam_iterator.dir/build.make CMakeFiles/exam_iterator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=7,8 "Built target exam_iterator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=9,10 "Built target exam_iterator"
 .PHONY : CMakeFiles/exam_iterator.dir/all
 
 # Include target in all.
@@ -185,7 +222,7 @@ clean: CMakeFiles/exam_iterator.dir/clean
 CMakeFiles/test_absfloat.dir/all:
 	$(MAKE) -f CMakeFiles/test_absfloat.dir/build.make CMakeFiles/test_absfloat.dir/depend
 	$(MAKE) -f CMakeFiles/test_absfloat.dir/build.make CMakeFiles/test_absfloat.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=23,24 "Built target test_absfloat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=25,26 "Built target test_absfloat"
 .PHONY : CMakeFiles/test_absfloat.dir/all
 
 # Include target in all.
@@ -222,7 +259,7 @@ clean: CMakeFiles/test_absfloat.dir/clean
 CMakeFiles/tree_array.dir/all:
 	$(MAKE) -f CMakeFiles/tree_array.dir/build.make CMakeFiles/tree_array.dir/depend
 	$(MAKE) -f CMakeFiles/tree_array.dir/build.make CMakeFiles/tree_array.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=37,38 "Built target tree_array"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=39,40 "Built target tree_array"
 .PHONY : CMakeFiles/tree_array.dir/all
 
 # Include target in all.
@@ -259,7 +296,7 @@ clean: CMakeFiles/tree_array.dir/clean
 CMakeFiles/test_ran.dir/all:
 	$(MAKE) -f CMakeFiles/test_ran.dir/build.make CMakeFiles/test_ran.dir/depend
 	$(MAKE) -f CMakeFiles/test_ran.dir/build.make CMakeFiles/test_ran.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=31,32 "Built target test_ran"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=33,34 "Built target test_ran"
 .PHONY : CMakeFiles/test_ran.dir/all
 
 # Include target in all.
@@ -296,7 +333,7 @@ clean: CMakeFiles/test_ran.dir/clean
 CMakeFiles/test_size.dir/all:
 	$(MAKE) -f CMakeFiles/test_size.dir/build.make CMakeFiles/test_size.dir/depend
 	$(MAKE) -f CMakeFiles/test_size.dir/build.make CMakeFiles/test_size.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=35,36 "Built target test_size"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=37,38 "Built target test_size"
 .PHONY : CMakeFiles/test_size.dir/all
 
 # Include target in all.
@@ -333,7 +370,7 @@ clean: CMakeFiles/test_size.dir/clean
 CMakeFiles/test_fork.dir/all:
 	$(MAKE) -f CMakeFiles/test_fork.dir/build.make CMakeFiles/test_fork.dir/depend
 	$(MAKE) -f CMakeFiles/test_fork.dir/build.make CMakeFiles/test_fork.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=29,30 "Built target test_fork"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=31,32 "Built target test_fork"
 .PHONY : CMakeFiles/test_fork.dir/all
 
 # Include target in all.
@@ -407,7 +444,7 @@ clean: CMakeFiles/01_package.dir/clean
 CMakeFiles/reverse_list.dir/all:
 	$(MAKE) -f CMakeFiles/reverse_list.dir/build.make CMakeFiles/reverse_list.dir/depend
 	$(MAKE) -f CMakeFiles/reverse_list.dir/build.make CMakeFiles/reverse_list.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=19,20 "Built target reverse_list"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=21,22 "Built target reverse_list"
 .PHONY : CMakeFiles/reverse_list.dir/all
 
 # Include target in all.
@@ -444,7 +481,7 @@ clean: CMakeFiles/reverse_list.dir/clean
 CMakeFiles/exam_multiarray.dir/all:
 	$(MAKE) -f CMakeFiles/exam_multiarray.dir/build.make CMakeFiles/exam_multiarray.dir/depend
 	$(MAKE) -f CMakeFiles/exam_multiarray.dir/build.make CMakeFiles/exam_multiarray.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=9,10 "Built target exam_multiarray"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=11,12 "Built target exam_multiarray"
 .PHONY : CMakeFiles/exam_multiarray.dir/all
 
 # Include target in all.
@@ -481,7 +518,7 @@ clean: CMakeFiles/exam_multiarray.dir/clean
 CMakeFiles/test_LRU.dir/all:
 	$(MAKE) -f CMakeFiles/test_LRU.dir/build.make CMakeFiles/test_LRU.dir/depend
 	$(MAKE) -f CMakeFiles/test_LRU.dir/build.make CMakeFiles/test_LRU.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=21,22 "Built target test_LRU"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=23,24 "Built target test_LRU"
 .PHONY : CMakeFiles/test_LRU.dir/all
 
 # Include target in all.
@@ -518,7 +555,7 @@ clean: CMakeFiles/test_LRU.dir/clean
 CMakeFiles/test_rand.dir/all:
 	$(MAKE) -f CMakeFiles/test_rand.dir/build.make CMakeFiles/test_rand.dir/depend
 	$(MAKE) -f CMakeFiles/test_rand.dir/build.make CMakeFiles/test_rand.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=33,34 "Built target test_rand"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=35,36 "Built target test_rand"
 .PHONY : CMakeFiles/test_rand.dir/all
 
 # Include target in all.
@@ -555,7 +592,7 @@ clean: CMakeFiles/test_rand.dir/clean
 CMakeFiles/quick_pow.dir/all:
 	$(MAKE) -f CMakeFiles/quick_pow.dir/build.make CMakeFiles/quick_pow.dir/depend
 	$(MAKE) -f CMakeFiles/quick_pow.dir/build.make CMakeFiles/quick_pow.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=15,16 "Built target quick_pow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=17,18 "Built target quick_pow"
 .PHONY : CMakeFiles/quick_pow.dir/all
 
 # Include target in all.
@@ -592,7 +629,7 @@ clean: CMakeFiles/quick_pow.dir/clean
 CMakeFiles/exam_output2.dir/all:
 	$(MAKE) -f CMakeFiles/exam_output2.dir/build.make CMakeFiles/exam_output2.dir/depend
 	$(MAKE) -f CMakeFiles/exam_output2.dir/build.make CMakeFiles/exam_output2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=13,14 "Built target exam_output2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=15,16 "Built target exam_output2"
 .PHONY : CMakeFiles/exam_output2.dir/all
 
 # Include target in all.
@@ -629,7 +666,7 @@ clean: CMakeFiles/exam_output2.dir/clean
 CMakeFiles/exam_damage.dir/all:
 	$(MAKE) -f CMakeFiles/exam_damage.dir/build.make CMakeFiles/exam_damage.dir/depend
 	$(MAKE) -f CMakeFiles/exam_damage.dir/build.make CMakeFiles/exam_damage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=5,6 "Built target exam_damage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=7,8 "Built target exam_damage"
 .PHONY : CMakeFiles/exam_damage.dir/all
 
 # Include target in all.
@@ -666,7 +703,7 @@ clean: CMakeFiles/exam_damage.dir/clean
 CMakeFiles/test_erase.dir/all:
 	$(MAKE) -f CMakeFiles/test_erase.dir/build.make CMakeFiles/test_erase.dir/depend
 	$(MAKE) -f CMakeFiles/test_erase.dir/build.make CMakeFiles/test_erase.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=27,28 "Built target test_erase"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=29,30 "Built target test_erase"
 .PHONY : CMakeFiles/test_erase.dir/all
 
 # Include target in all.
@@ -703,7 +740,7 @@ clean: CMakeFiles/test_erase.dir/clean
 CMakeFiles/quick_sort.dir/all:
 	$(MAKE) -f CMakeFiles/quick_sort.dir/build.make CMakeFiles/quick_sort.dir/depend
 	$(MAKE) -f CMakeFiles/quick_sort.dir/build.make CMakeFiles/quick_sort.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=17,18 "Built target quick_sort"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=19,20 "Built target quick_sort"
 .PHONY : CMakeFiles/quick_sort.dir/all
 
 # Include target in all.
@@ -740,7 +777,7 @@ clean: CMakeFiles/quick_sort.dir/clean
 CMakeFiles/exam_output1.dir/all:
 	$(MAKE) -f CMakeFiles/exam_output1.dir/build.make CMakeFiles/exam_output1.dir/depend
 	$(MAKE) -f CMakeFiles/exam_output1.dir/build.make CMakeFiles/exam_output1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=11,12 "Built target exam_output1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jucilab/learn-cpp/CMakeFiles --progress-num=13,14 "Built target exam_output1"
 .PHONY : CMakeFiles/exam_output1.dir/all
 
 # Include target in all.

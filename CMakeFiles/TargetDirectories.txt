@@ -1,6 +1,7 @@
 /home/jucilab/learn-cpp/CMakeFiles/rebuild_cache.dir
 /home/jucilab/learn-cpp/CMakeFiles/edit_cache.dir
 /home/jucilab/learn-cpp/CMakeFiles/auto_machine.dir
+/home/jucilab/learn-cpp/CMakeFiles/exam_al1.dir
 /home/jucilab/learn-cpp/CMakeFiles/test_char.dir
 /home/jucilab/learn-cpp/CMakeFiles/exam_iterator.dir
 /home/jucilab/learn-cpp/CMakeFiles/test_absfloat.dir

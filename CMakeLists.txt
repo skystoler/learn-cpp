@@ -45,6 +45,8 @@ add_executable(exam_iterator exam/exam_iterator.cc)
 
 add_executable(exam_multiarray exam/exam_multiarray.cc)
 
+add_executable(exam_al1 exam/exam_al1.cc)
+
 #project
 add_executable(auto_machine project/auto_machine.cc)
 

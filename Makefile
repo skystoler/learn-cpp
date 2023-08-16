@@ -127,6 +127,19 @@ auto_machine/fast:
 .PHONY : auto_machine/fast
 
 #=============================================================================
+# Target rules for targets named exam_al1
+
+# Build rule for target.
+exam_al1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exam_al1
+.PHONY : exam_al1
+
+# fast build rule for target.
+exam_al1/fast:
+	$(MAKE) -f CMakeFiles/exam_al1.dir/build.make CMakeFiles/exam_al1.dir/build
+.PHONY : exam_al1/fast
+
+#=============================================================================
 # Target rules for targets named test_char
 
 # Build rule for target.
@@ -498,6 +511,33 @@ algorithm/tree_array.cc.s:
 	$(MAKE) -f CMakeFiles/tree_array.dir/build.make CMakeFiles/tree_array.dir/algorithm/tree_array.cc.s
 .PHONY : algorithm/tree_array.cc.s
 
+exam/exam_al1.o: exam/exam_al1.cc.o
+
+.PHONY : exam/exam_al1.o
+
+# target to build an object file
+exam/exam_al1.cc.o:
+	$(MAKE) -f CMakeFiles/exam_al1.dir/build.make CMakeFiles/exam_al1.dir/exam/exam_al1.cc.o
+.PHONY : exam/exam_al1.cc.o
+
+exam/exam_al1.i: exam/exam_al1.cc.i
+
+.PHONY : exam/exam_al1.i
+
+# target to preprocess a source file
+exam/exam_al1.cc.i:
+	$(MAKE) -f CMakeFiles/exam_al1.dir/build.make CMakeFiles/exam_al1.dir/exam/exam_al1.cc.i
+.PHONY : exam/exam_al1.cc.i
+
+exam/exam_al1.s: exam/exam_al1.cc.s
+
+.PHONY : exam/exam_al1.s
+
+# target to generate assembly for a file
+exam/exam_al1.cc.s:
+	$(MAKE) -f CMakeFiles/exam_al1.dir/build.make CMakeFiles/exam_al1.dir/exam/exam_al1.cc.s
+.PHONY : exam/exam_al1.cc.s
+
 exam/exam_damage.o: exam/exam_damage.cc.o
 
 .PHONY : exam/exam_damage.o
@@ -858,6 +898,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... auto_machine"
+	@echo "... exam_al1"
 	@echo "... test_char"
 	@echo "... exam_iterator"
 	@echo "... test_absfloat"
@@ -891,6 +932,9 @@ help:
 	@echo "... algorithm/tree_array.o"
 	@echo "... algorithm/tree_array.i"
 	@echo "... algorithm/tree_array.s"
+	@echo "... exam/exam_al1.o"
+	@echo "... exam/exam_al1.i"
+	@echo "... exam/exam_al1.s"
 	@echo "... exam/exam_damage.o"
 	@echo "... exam/exam_damage.i"
 	@echo "... exam/exam_damage.s"
